@@ -1,0 +1,52 @@
+{
+  "name": "dovers-greybearded-qol-enhancements",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Enhances the Greybeard QoL module with additional quality of life improvements.",
+  "homepage": "https://github.com/EddieDover/dovers-greybearded-qol-enhancements#readme",
+  "url": "https://github.com/EddieDover/dovers-greybearded-qol-enhancements",
+  "bugs": {
+    "url": "https://github.com/EddieDover/dovers-greybearded-qol-enhancements/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EddieDover/dovers-greybearded-qol-enhancements"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Eddie Dover",
+    "email": "ed@eddiedover.dev",
+    "discord": "EddieDover",
+    "flags": {}
+  },
+  "type": "module",
+  "main": "scripts/crew-achievements.js",
+  "scripts": {
+    "build": "node build.js",
+    "copy": "node copy.js",
+    "deploy": "npm run build && npm run copy",
+    "package": "node build.js --package",
+    "release": "commit-and-tag-version --sign",
+    "release:dry": "commit-and-tag-version --dry-run"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "archiver": "^7.0.1",
+    "commit-and-tag-version": "^12.6.0",
+    "cross-env": "^10.1.0",
+    "eslint": "^9.37.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "globals": "^16.4.0",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
+    "prettier": "^3.6.2",
+    "prettier-eslint": "^16.4.2"
+  },
+  "commit-and-tag-version": {
+    "skip": {
+      "commit": true,
+      "tag": true
+    }
+  }
+}
