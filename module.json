@@ -1,0 +1,24 @@
+{
+  "id": "dovers-greybearded-qol-enhancements",
+  "title": "Dover's Greybearded QoL Enhancements",
+  "description": "Enhances the Greybeard QoL module with additional quality of life improvements.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.351"
+  },
+  "relationships": {
+    "requires": [
+      {
+        "id": "mosh-greybearded-qol",
+        "type": "module"
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/extension.js"
+  ],
+  "styles": [
+    "styles/override.css"
+  ]
+}

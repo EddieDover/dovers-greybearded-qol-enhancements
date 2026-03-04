@@ -1,0 +1,112 @@
+<div class="class-selection-content master-detail-layout" style="--theme-color: {{themeColor}};">
+  
+  <!-- Left Column: List -->
+  <div class="class-list-panel">
+    <h3 class="class-list-header">Classes</h3>
+    <ul class="class-list">
+        {{#each classes}}
+        <li class="class-list-item interactive" data-action="selectClass" data-class-id="{{this.id}}">
+            <span class="class-name">{{this.name}}</span>
+            <i class="fas fa-chevron-right"></i>
+        </li>
+        {{/each}}
+    </ul>
+  </div>
+
+  <!-- Right Column: Details -->
+  <div class="class-details-panel">
+    {{#each classes}}
+      <div class="class-detail-view" data-class-id="{{this.id}}">
+        <div class="detail-header">
+            <img src="{{this.img}}" alt="{{this.name}}" class="class-icon">
+            <h2>{{this.name}}</h2>
+        </div>
+        
+        <div class="detail-body">
+            <!-- Attributes -->
+            {{#if this.attributes}}
+            <div class="attributes-section">
+                <h3>Attributes</h3>
+                <div class="attributes-container">{{{splitAttributes this.attributes}}}</div>
+            </div>
+            {{/if}}
+
+            <!-- Trauma Response -->
+            {{#if this.trauma}}
+            <div class="trauma-section">
+                <h3>Trauma Response</h3>
+                <p class="trauma-response">{{this.trauma}}</p>
+            </div>
+            {{/if}}
+
+            <!-- Description -->
+            <div class="description-section">
+                <h3>Description</h3>
+                <p class="description">{{this.description}}</p>
+            </div>
+
+            <!-- Skills -->
+            <div class="skills-section">
+                <h3>Skills</h3>
+                
+                {{#if this.skillView.defaultSkills}}
+                <div class="class-skill-view">
+                    <!-- Default Skills Card -->
+                    <div class="card class-skill-option-card">
+                        <h4>{{this.skillView.defaultSkills.name}}</h4>
+                        <ul class="class-skill-list">
+                            {{#if this.skillView.defaultSkills.trained}}<li><strong>Trained:</strong> {{this.skillView.defaultSkills.trained}}</li>{{/if}}
+                            {{#if this.skillView.defaultSkills.expert}}<li><strong>Expert:</strong> {{this.skillView.defaultSkills.expert}}</li>{{/if}}
+                            {{#if this.skillView.defaultSkills.master}}<li><strong>Master:</strong> {{this.skillView.defaultSkills.master}}</li>{{/if}}
+                        </ul>
+                        {{#if this.skillView.defaultSkills.skills.length}}
+                            <h5 class="class-skill-linked-heading">Linked Skills</h5>
+                            <ul class="class-skill-list">
+                            {{#each this.skillView.defaultSkills.skills}}
+                                <li>{{this.name}}</li>
+                            {{/each}}
+                            </ul>
+                        {{/if}}
+                    </div>
+
+                    <!-- Optional / Choice Skills Cards -->
+                    {{#if this.skillView.orOptions.length}}
+                        {{#each this.skillView.orOptions}}
+                        <div class="card class-skill-option-card optional-skill-card">
+                            <h4>{{this.name}}</h4>
+                            <ul class="class-skill-list">
+                                {{#if this.trained}}<li><strong>Trained:</strong> {{this.trained}}</li>{{/if}}
+                                {{#if this.expert}}<li><strong>Expert:</strong> {{this.expert}}</li>{{/if}}
+                                {{#if this.master}}<li><strong>Master:</strong> {{this.master}}</li>{{/if}}
+                            </ul>
+                            {{#if this.skills.length}}
+                                <h5 class="class-skill-linked-heading">Specific Skills</h5>
+                                <ul class="class-skill-list">
+                                {{#each this.skills}}
+                                    <li>{{this.name}}</li>
+                                {{/each}}
+                                </ul>
+                            {{/if}}
+                        </div>
+                        {{/each}}
+                    {{/if}}
+                </div>
+                {{else}}
+                <p>No default skills.</p>
+                {{/if}}
+            </div>
+        </div>
+      </div>
+    {{/each}}
+    
+    <!-- Placeholder -->
+    <div class="class-detail-placeholder">
+        <div class="placeholder-content">
+            <i class="fas fa-arrow-left fa-3x"></i>
+            <h3>Select a Class</h3>
+            <p>Choose a class from the list on the left to view its details.</p>
+        </div>
+    </div>
+  </div>
+
+</div>
