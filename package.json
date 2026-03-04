@@ -20,7 +20,7 @@
     "flags": {}
   },
   "type": "module",
-  "main": "scripts/crew-achievements.js",
+  "main": "scripts/extension.js",
   "scripts": {
     "build": "node build.js",
     "copy": "node copy.js",
