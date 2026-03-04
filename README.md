@@ -1,6 +1,6 @@
 # Dover's Greybearded QoL Enhancements
 
-Enhances the [Greybearded Qol](https://github.com/mosh-greybearded-qol) module with additional quality of life improvements, specifically targeting the character creation experience.
+Enhances the [Greybearded QoL](https://github.com/mosh-greybearded-qol) module with additional quality of life improvements, specifically targeting the character creation experience.
 
 ## Features
 
@@ -19,8 +19,17 @@ Replaces the standard class selection interface with a modern "Master-Detail" la
 
 - **Foundry VTT:** Version 13+
 - **Module:** `mosh-greybearded-qol`
+- **Systems:** `mosh`
 
 ## Screenshots
+
+| Before | After |
+| --- | --- |
+| <img alt="image" src="https://github.com/user-attachments/assets/4fb2b657-3207-4129-89df-41ce6552ba63" /> | <img width="726" height="749" alt="image" src="https://github.com/user-attachments/assets/0431dc78-70f5-4f78-b21f-e736e7c89511" /> <br/> <img width="726" height="954" alt="image" src="https://github.com/user-attachments/assets/670ed4be-b656-42c4-b410-aa9710e031fe" /> |
+
+
+
+
 
 ## Technical Details
 
