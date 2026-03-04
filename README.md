@@ -7,8 +7,8 @@ Enhances the [Greybearded QoL](https://github.com/mosh-greybearded-qol) module w
 ### Enhanced Class Selection UI
 Replaces the standard class selection interface with a modern "Master-Detail" layout:
 - **Split View:** A list of classes on the left and detailed information on the right.
-- **Improved Readability:** Attributes are automatically parsed and split into positive and negative columns for easier comparison.
-- **Visual Upgrades:** Includes class icons and structured sections for Trauma Responses, Descriptions, and Skills.
+- **Improved Readability:** Attributes are automatically parsed and split into positive and negative columns for easier comparison. Includes structured sections for Trauma Responses, Descriptions, and Skills.
+- **Responsive Design:** Replaces the original unresponsive design with one capable of handling any number of custom classes.
 
 ## Installation
 
