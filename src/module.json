@@ -2,7 +2,14 @@
   "id": "dovers-greybearded-qol-enhancements",
   "title": "Dover's Greybearded QoL Enhancements",
   "description": "Enhances the Greybeard QoL module with additional quality of life improvements.",
-  "version": "1.0.0",
+  "url": "https://github.com/EddieDover/dovers-greybearded-qol-enhancements",
+  "bugs": "https://github.com/EddieDover/dovers-greybearded-qol-enhancements/issues",
+  "changelog": "https://github.com/EddieDover/dovers-greybearded-qol-enhancements/releases",
+  "manifest": "https://github.com/EddieDover/dovers-greybearded-qol-enhancements/releases/download/v1.0.1/module.json",
+  "download": "https://github.com/EddieDover/dovers-greybearded-qol-enhancements/releases/download/v1.0.1/module.zip",
+  "license": "https://github.com/EddieDover/dovers-greybearded-qol-enhancements/raw/main/LICENSE.md",
+  "readme": "https://github.com/EddieDover/dovers-greybearded-qol-enhancements/raw/main/README.md",
+  "version": "1.0.1",
   "compatibility": {
     "minimum": "13",
     "verified": "13.351"
