@@ -1,6 +1,6 @@
 # Dover's Greybearded QoL Enhancements
 
-Enhances the [Greybearded QoL](https://github.com/mosh-greybearded-qol) module with additional quality of life improvements, specifically targeting the character creation experience.
+Enhances the [Greybearded QoL](https://github.com/GreybeardGM/mosh-greybearded-qol) module with additional quality of life improvements, specifically targeting the character creation experience.
 
 ## Features
 
